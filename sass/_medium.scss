@@ -1,0 +1,77 @@
+nav {
+    ul {
+        justify-content: flex-end;
+    }
+}   
+
+//main
+main {
+.main-text {
+
+        .main-text-content {
+            padding: $gutterdbl;
+        .main-text-left {
+        }
+        .main-text-right {
+        }
+        }
+    }
+
+    //cards
+    .about-cards {
+        display: flex;
+        justify-content:flex-start;
+        max-width: $maxWidth;
+
+    
+    .card {
+        width: 50%;
+    }
+}
+    
+
+.section-2 {
+        .about-cards-2 {
+            width: 100%;
+    
+    .card {
+        float: left;
+        width: 50%;
+        
+    }
+    
+            .card-2 {
+
+            }
+}//end about cards 2
+        .card-3 {
+        width: 50%;
+            margin: auto;
+    }
+    }//end section 2
+    
+    .sponsors {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 50px;
+        margin-right: 50px;
+        figure { 
+            
+            img {
+            }
+        }
+    }
+
+    
+} //end main
+
+.footer-div {
+
+footer {
+    div {
+        
+    }
+	p {
+        text-align: center;
+	} // end p
+} 
+}// end footer

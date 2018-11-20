@@ -1,0 +1,116 @@
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 0;
+}
+nav {
+    margin-left: 50px;
+    margin-right: 50px;
+    li a {
+            padding: 10px 16px;
+    }
+}
+
+//main
+main {
+
+.hero {
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+.main-text {
+        
+    .main-text-content {
+        flex-wrap: nowrap;
+        margin-left: 50px;
+        margin-right: 50px;
+        .main-text-left {
+            width: 80%;
+            margin-left: 0;
+        }
+        .main-text-right {
+            width: 20%;
+            margin-left: 0;
+            text-align: right;
+        }
+    }
+}
+    
+#more-about {
+    margin-left: 50px;
+}
+
+.about-cards {
+    margin-left: 50px;
+    margin-right: 50px;
+
+        .card {
+        width: 25%;
+    }
+}
+    
+    .section-2 {
+        
+    margin-left: 50px;
+    margin-right: 50px;
+    
+.about-cards-2 {
+        width: 66.666%;
+        float: left;
+
+        .card {
+
+    }
+    .card-2 {
+
+
+    }
+}
+    
+    .card-3 {
+        width: 33.333%;
+        float: right;
+
+    }
+    }//end section 2
+    
+    .sponsors {
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        figure { 
+            
+            img {
+            }
+        }
+    }
+
+    
+} //end main
+
+
+
+.footer-div {
+
+footer {
+    div {
+        
+    }
+	p {
+        margin-left: 50px;
+        text-align: left;
+	} // end p
+} 
+}// end footer
+
+
+
+
+
+
+
+
+
+

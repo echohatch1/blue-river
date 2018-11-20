@@ -1,0 +1,276 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ------------- BODY ------------- */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+    min-height: 100%;
+    width: 100%;
+    background: $fontColor;
+    
+
+    input {
+        border-radius: 2px;
+    }
+    a {
+        text-decoration: none;
+        color: $secondaryColor;
+        font-weight: 500;
+    }
+}
+
+
+/* ------------- HEADER ------------- */
+header {
+    max-width: $maxWidth;
+    background-color: $fontColor;
+    padding: $gutterdbl;
+    margin-top: -30px;
+    padding-bottom: 0;
+    height: 100%;
+    .header-div {
+        max-width: $maxWidth;
+    }
+
+    
+    figure {
+        width: 200px;
+            
+        img {
+            width: 100%;
+        }
+    }
+    .line {
+        position: relative;
+        top: 72px;
+        margin-left: 60px;
+    }
+
+    
+} //end header
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+    
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: $maxWidth;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+
+}
+
+li a {
+    display: block;
+    color: $altColor;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    i {
+        margin-right: $gutter;
+    }
+}
+    li a:hover {
+        color: $secondaryColor;
+    }
+
+}// end nav
+
+
+
+/*  ------------- MAIN -------------  */
+
+main {
+    min-height: 20rem;
+    #main-div {
+        margin-bottom: $gutterdbl;
+        
+    }
+    
+	h1 {
+		font-size: 2rem;
+		margin-top: 1rem;
+		color: $primaryColor;
+        margin-left: $gutter;
+	} // end h1
+	
+	h2 {
+		font-size: 1.5rem;
+		margin: .75rem 0 .5rem 0;
+		color: $accentColor;
+	} // end h2
+    
+    	h3 {
+		font-size: 1.5rem;
+		margin: .75rem 0 .5rem 0;
+		color: $primaryColor;
+	} // end h3
+
+	
+    .hero {
+        max-width: $maxWidth;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .main-text {
+        background: $secondaryColor;
+        width: 100%;
+        margin-top: $gutter;
+        .main-text-content {
+        max-width: $maxWidth;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: $fontColor;
+        padding: $gutterdbl;
+            ul {
+                margin: $gutterdbl * 2;
+                margin-bottom: $gutterdbl;
+            }
+        .main-text-left {
+        }
+        .main-text-right {
+            margin-bottom: $gutterdbl;
+        }
+        }
+    }
+    
+    //cards
+    .about-cards {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: $maxWidth;
+            /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    .card {
+
+    transition: 0.3s;
+        width: 100%;
+        padding: $gutterdbl;
+    }
+
+
+    /* Add some padding inside the card container */
+    .container {
+    }
+    } //end about cards
+    
+    .section-2 {
+        display: block;
+        clear:both;
+        max-width: $maxWidth;
+        margin-top: $gutter;
+        
+    .about-cards-2 {
+        width: 100%;
+        
+            /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    .card {
+
+    transition: 0.3s;
+        padding: $gutterdbl;
+    }
+    
+            .card-2 {
+                padding: $gutterdbl;
+            }
+            
+    } //end about cards 2
+        .card-3 {
+                padding: $gutterdbl;
+                width: 100%;
+                /* Add shadows to create the "card" effect */
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                position: relative;
+            .container {
+                text-align: center;
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                right: 0;
+                button {
+                    margin: $gutter;
+                    background-image: linear-gradient(lighten($primaryColor, 15%), darken($primaryColor, 15%));
+                    padding: $gutter;
+                    padding-left: $gutterdbl * 2;
+                    padding-right: $gutterdbl * 2;
+                    color: $fontColor;
+                    border: none;
+                    border-radius: 20px;
+                }
+            }
+            }
+} //end section 2
+
+    .sponsors {
+        margin-top: $gutterdbl;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        align-items: center;
+        padding-left: $gutterdbl;
+        padding-right: $gutterdbl;
+        background: #ffff;
+        figure { 
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+       
+} // end main
+
+
+/*  ------------- FOOTER -------------  */
+.footer-div {
+    width: 100%;
+footer {
+    display: block;
+    float: left;
+	width: 100%;
+	background-image: linear-gradient($primaryColor, $secondaryColor);
+    margin-top: $gutterdbl;
+    div {
+        max-width: $maxWidth;
+        
+    }
+	p {
+		text-align: center;
+		color: $fontColor;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} // end p
+} 
+}// end footer
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
